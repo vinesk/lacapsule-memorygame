@@ -15,7 +15,7 @@
 
 ## Tech Stack
 
-**Frontend**: React, Next.js
+**Frontend**: React, Next.js  
 **Deployment**: Vercel
 
 ## Repository
