@@ -4,6 +4,10 @@
 
 **Memory Game** is a React-based web app that implements the classic card-matching game. Players test their memory by flipping cards and trying to find matching pairs.
 
+## Live Demo
+
+Visit the live application at: [https://lacapsule-memorygame.vercel.app](https://lacapsule-memorygame.vercel.app)
+
 ## Features
 
 - **Card Grid**: Display a grid of face-down cards.
