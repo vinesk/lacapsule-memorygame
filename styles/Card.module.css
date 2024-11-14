@@ -1,7 +1,6 @@
 .card {
-  height: 120px;
-  width: 160px;
-  margin: 20px;
+  aspect-ratio: 1;
+  width: 100%;
   background: transparent;
   cursor: pointer;
   perspective: 1000px;
@@ -52,4 +51,15 @@ card:hover .cardBack {
 .cardFront {
   background-color: rgb(76, 82, 87);
   border: 2px solid rgb(76, 82, 87);
+}
+
+@media (max-width: 768px) {
+  .card:hover .cardFront,
+  .card:hover .cardBack {
+    transform: none;
+  }
+
+  .card.active {
+    transform: scale(1.02);
+  }
 }
