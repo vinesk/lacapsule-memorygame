@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-Visit the live application at: [https://lacapsule-memorygame.vercel.app](https://lacapsule-memorygame.vercel.app)
+Visit the live application at: [https://memory-game-vinesk.vercel.app/](https://memory-game-vinesk.vercel.app/)
 
 ## Features
 
@@ -24,7 +24,7 @@ Visit the live application at: [https://lacapsule-memorygame.vercel.app](https:/
 
 ## Repository
 
-- **Project Repository**: [lacapsule-memorygame](https://github.com/vinesk/lacapsule-memorygame)
+- **Project Repository**: [memory-game](https://github.com/vinesk/memory-game)
 
 ## Setup
 
