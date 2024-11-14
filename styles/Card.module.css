@@ -1,18 +1,24 @@
 .card {
-  aspect-ratio: 1;
+  height: clamp(120px, 22vw, 140px);
   width: 100%;
+  margin: 0;
   background: transparent;
   cursor: pointer;
   perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card.active {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .flipper {
   transform-style: preserve-3d;
-  transition: all 600ms;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   width: 100%;
   height: 100%;
@@ -30,36 +36,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 600ms;
+  transition: all 0.3s ease;
   top: 0;
   left: 0;
   backface-visibility: hidden;
-  border-radius: 6px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover .cardFront,
-card:hover .cardBack {
-  border-color: #86f3df;
-  transform: scale(1.15);
+.cardFront {
+  background: linear-gradient(145deg, #4c5257, #3a3f44);
+  border: 2px solid rgba(134, 243, 223, 0.1);
 }
 
 .cardBack {
   transform: rotateY(180deg);
-  background-color: rgb(3, 43, 58);
+  background: linear-gradient(145deg, #044d6c, #032b3a);
+  border: 2px solid rgba(134, 243, 223, 0.2);
 }
 
-.cardFront {
-  background-color: rgb(76, 82, 87);
-  border: 2px solid rgb(76, 82, 87);
-}
-
-@media (max-width: 768px) {
-  .card:hover .cardFront,
-  .card:hover .cardBack {
-    transform: none;
-  }
-
-  .card.active {
-    transform: scale(1.02);
-  }
+.card:hover .cardFront,
+.card:hover .cardBack {
+  border-color: rgba(134, 243, 223, 0.4);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 8px rgba(134, 243, 223, 0.2);
 }
